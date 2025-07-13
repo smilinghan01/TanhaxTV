@@ -12,7 +12,7 @@
     <link rel="icon" href="image/logo.png">
     <link rel="apple-touch-icon" href="image/logo-black.png">
     <link rel="manifest" href="manifest.json">
-    
+
     <script src="libs/tailwindcss.min.js"></script>
     <script>
     var _hmt = _hmt || [];
@@ -23,7 +23,8 @@
       s.parentNode.insertBefore(hm, s);
     })();
     </script>
-
+    
+    <script src="libs/tailwindcss.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
@@ -318,9 +319,9 @@
                         所有视频均来自第三方API接口。如有侵权，请联系相关内容提供方。
                     </p>
                     <div class="mt-2 flex justify-center md:justify-end space-x-4">
-                        <a href="https://nihaotang.com" class="text-gray-400 hover:text-white text-sm transition-colors">关于我们</a>
-                        <a href="https://nihaotang.com" class="text-gray-400 hover:text-white text-sm transition-colors">隐私政策</a>
-                        <a href="https://nihaotang.com/me/picture/wx.png" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 text-sm transition-colors">捐赠</a>
+                        <a href="about.html" class="text-gray-400 hover:text-white text-sm transition-colors">关于我们</a>
+                        <a href="about.html" class="text-gray-400 hover:text-white text-sm transition-colors">隐私政策</a>
+                        <a href="https://www.msf.hk/zh-hant/donate/general?type=one-off" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-300 text-sm transition-colors">捐赠</a>
                     </div>
                 </div>
             </div>
@@ -352,7 +353,10 @@
                 <form id="passwordForm" onsubmit="handlePasswordSubmit(); return false;">
                     <input type="text" name="username" id="username" autocomplete="username" style="display:none" tabindex="-1" aria-hidden="true">
                     <input type="password" id="passwordInput" class="w-full bg-[#111] border border-[#333] text-white px-4 py-3 rounded-lg focus:outline-none focus:border-white transition-colors" placeholder="密码..." autocomplete="new-password">
-                    <button id="passwordSubmitBtn" type="submit" class="mt-4 w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">提交</button>
+                    <div class="mt-4 w-full flex space-x-4">
+                        <button id="passwordSubmitBtn" type="submit" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">提交</button>
+                        <button id="passwordCancelBtn" type="button" onclick="hidePasswordModal()" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">取消</button>
+                    </div>
                 </form>
                 <p id="passwordError" class="text-red-500 mt-2 hidden">密码错误，请重试</p>
             </div>
@@ -401,14 +405,14 @@
     <!-- JSON-LD 结构化数据 -->
     <script type="application/ld+json">
     {
-        "@context": "https://nihaotang.comg",
+        "@context": "https://schema.org",
         "@type": "WebSite",
         "name": "TanhaxTV",
         "url": "https://nihaotang.com/",
         "description": "免费在线视频搜索与观看平台",
         "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://nihaotang.com/?s={search_term_string}",
+            "target": "https://smiling.eu.org/?s={search_term_string}",
             "query-input": "required name=search_term_string"
         }
     }
