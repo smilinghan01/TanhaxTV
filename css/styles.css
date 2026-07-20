@@ -299,6 +299,7 @@ body {
     box-shadow: 0 0 8px rgba(0, 204, 255, 0.3);
 }
 
+/* 黄色功能已注释 - yellowFilterToggle 样式
 #yellowFilterToggle:checked + .toggle-bg {
     background-color: var(--primary-color);
 }
@@ -311,6 +312,7 @@ body {
 #yellowFilterToggle:hover + .toggle-bg {
     box-shadow: 0 0 0 2px rgba(0, 204, 255, 0.3);
 }
+*/
 
 /* 添加广告过滤开关的CSS */
 #adFilterToggle:checked + .toggle-bg {
@@ -335,9 +337,11 @@ body {
     transition: background-color 0.3s ease-in-out;
 }
 
+/* 黄色功能已注释 - yellowFilterToggle dot 阴影
 #yellowFilterToggle:checked ~ .toggle-dot {
     box-shadow: 0 2px 4px rgba(0, 204, 255, 0.3);
 }
+*/
 
 #adFilterToggle:checked ~ .toggle-dot {
     box-shadow: 0 2px 4px rgba(0, 204, 255, 0.3);
@@ -452,12 +456,11 @@ body {
     opacity: 1;
 }
 
-/* 成人内容API标记样式 */
+/* 黄色功能已注释 - 成人内容API标记样式
 .api-adult + label {
     color: #ff6b8b !important;
 }
 
-/* 添加警告图标和标签样式 */
 .adult-warning {
     display: inline-flex;
     align-items: center;
@@ -471,12 +474,12 @@ body {
     margin-right: 4px;
 }
 
-/* 过滤器禁用样式 */
 .filter-disabled {
     opacity: 0.5;
     pointer-events: none;
     cursor: not-allowed;
 }
+*/
 
 /* API组标题样式 */
 .api-group-title {
@@ -490,11 +493,13 @@ body {
     letter-spacing: 0.05em;
 }
 
+/* 黄色功能已注释 - 成人API组标题样式
 .api-group-title.adult {
     color: #ff6b8b;
 }
+*/
 
-/* 过滤器禁用样式 - 改进版本 */
+/* 黄色功能已注释 - 过滤器禁用样式改进版本
 .filter-disabled {
     position: relative;
 }
@@ -510,7 +515,9 @@ body {
     border-radius: 0.5rem;
     z-index: 5;
 }
+*/
 
+/* 黄色功能已注释 - filter-disabled 子元素样式
 .filter-disabled > * {
     opacity: 0.7;
 }
@@ -524,14 +531,14 @@ body {
     background-color: #666 !important;
 }
 
-/* 改进过滤器禁用样式 */
 .filter-disabled .filter-description {
     color: #ff6b8b !important;
     font-style: italic;
     font-weight: 500;
 }
+*/
 
-/* 修改过滤器禁用样式，确保文字清晰可见 */
+/* 黄色功能已注释 - 修改过滤器禁用样式，确保文字清晰可见
 .filter-disabled {
     position: relative;
 }
@@ -547,6 +554,7 @@ body {
     border-radius: 0.5rem;
     z-index: 5;
 }
+*/
 
 .filter-disabled > * {
     opacity: 1; /* 提高子元素不透明度，保证可见性 */
@@ -621,7 +629,7 @@ body {
     background-color: #2a2a2a;
 }
 
-/* 成人内容标签样式 */
+/* 黄色功能已注释 - 成人内容标签样式
 .adult-tag {
     display: inline-flex;
     align-items: center;
@@ -630,6 +638,7 @@ body {
     font-weight: 500;
     margin-right: 0.35rem;
 }
+*/
 
 /* 历史记录面板样式 */
 .history-panel {
